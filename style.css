@@ -1,0 +1,442 @@
+
+table {
+  position: relative;
+  margin: 0 auto;
+  width: 94%;
+}
+.rtable {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  // optional - looks better for small cell values
+ /* white-space: nowrap;*/
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/*change background colors og the table*/
+
+td.background_header_coll_1 {
+  background-color: none;
+}
+td.background_header_coll_2 {
+  background-color: none;
+}
+
+td.background_header_coll_3 {
+  background-color: none;
+}
+
+td.background_header_coll_4 {
+  background-color: none;
+}
+
+td.background_header_coll_5 {
+  background-color: none;
+} 
+/* end set color of the header*/
+
+td.background_coll_1 {
+  background-color:none;
+}
+
+td.background_coll_2 {
+  background-color: none;
+}
+
+td.background_coll_3 {
+  background-color: none;
+}
+
+td.background_coll_4 {
+  background-color:none;
+}
+
+td.background_coll_5 {
+  background-color:none;
+}
+
+/* END OF change background colors og the table*/
+
+
+.rtable, .one {
+  min-height: 9em;
+  text-align: center; 
+}
+
+
+.retable,
+.name,
+.features,
+.disckSpace,
+.score,
+.details {
+  min-height: 11.47em;
+}
+
+.rfaw {
+  font-size: 3em; 
+  color: orange;
+}
+div {
+  padding-top: 43px;
+}
+div.name, 
+.disckSpace,
+.features,
+.score,
+.details
+ {
+  display: block;
+  position: relative;
+}
+#faws{
+  position:  ABSOLUTE;
+  top: 87px;
+  left: 24px;
+  font-size: 0.7em;
+}
+#faws2{
+  position:  ABSOLUTE;
+  top: 52px;
+  left: 23px;
+  font-size: 0.7em;
+}
+#faws3{
+  position:  ABSOLUTE;
+  top: 53px;
+  left: 23px;
+  font-size: 0.7em;
+}
+.name {
+  display: inline-block;
+}
+/*RIBBONS DESIGN */
+
+
+/*left corner ribbon*/
+.left_ribbon_position img {
+  position: absolute;
+  left: 112px; top: 29px; 
+  z-index: 1;
+  overflow: hidden;
+  width: 73px;
+  height: 73px;
+  text-align: right;
+}
+
+.left_ribbon_position2 img {
+  position: absolute;
+  left: 112px; top: 170px; 
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+
+.right_ribbon_position1 img {
+  position: absolute;
+  left: 205px; top: 26px; 
+  z-index: 1;
+  overflow: hidden;
+  width: 81px;
+  height: 81px;
+  text-align: right;
+}
+
+.ribbon_position1 img {
+  position: absolute;
+  left: 421px; top: 29px; 
+  z-index: 1;
+  overflow: hidden;
+  width: 81px;
+  height: 60px;
+  text-align: right;
+}
+
+.H_ribbon_position1 img {
+  position: absolute;
+  left: 465px; top: 129px; 
+  z-index: 1;
+  overflow: hidden;
+  width: 83px;
+  height: 40px;
+  text-align: right;
+}
+
+/* END RIBBONS DESIGN */
+
+
+ /*green button design */
+.rtable button {
+  background-color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.rtable button a {
+      color: white;
+      text-decoration: none;
+} /*END green button design */
+
+
+#pBold {
+  font-weight: bold;
+}
+.rtable tr:hover {
+  background-color:#fffec5ff;
+}
+
+
+.rtable,
+.rtable--flip tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+  
+  // scrolling shadows
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+/*// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow*/
+.rtable td:first-child,
+.rtable--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+/*// gradient on the last cells to hide the right shadow*/
+.rtable td:last-child,
+.rtable--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.rtable th {
+  font-size: 11px;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+
+.rtable th,
+.rtable td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+  // border-collapse is no longer active
+  border-left: 0;
+}
+
+// border-collapse is no longer active
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
+body {
+  margin: 0;
+/*  padding: 25px;*/
+  color: #494b4d;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+table {
+  margin-bottom: 30px;
+}
+
+a {
+  color: #ff6680;
+}
+
+code {
+  background: #fffbcc;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .rtable th {
+    max-width: 12em;
+  }
+  .rtable,
+  .unlimited {
+    min-height: 2.9em;
+  }
+  tr.rtable  {
+    vertical-align: center
+  }
+
+.rtable,
+.name,
+.features,
+.disckSpace,
+.score,
+.details {
+  min-height: 11.47em;
+
+}
+
+.rtable, .one {
+  min-height: 9em;
+  text-align: center; 
+}
+}
+
+
+
+/*DESIGN 2*/
+
+.stable {
+  /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  
+  overflow-x: auto;
+  
+  // optional - looks better for small cell values
+  white-space: nowrap;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.stable,
+.stable--flip tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+  
+
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+.stable td:first-child,
+.stable--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+.stable td:last-child,
+.stable--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.stable th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.stable th,
+.stable td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+.stable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.stable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.stable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.stable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.stable--flip td,
+.stable--flip th {
+  display: block;
+}
+
+.stable--flip td {
+  background-image: none !important;
+ 
+  border-left: 0;
+}
+
+// border-collapse is no longer active
+.stable--flip th:not(:last-child),
+.stable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
